@@ -198,7 +198,7 @@ body {
 }
 
 a:link {
-  color: var(--text-color);
+  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -214,10 +214,6 @@ a:active {
   background-color: var(--color-light-grey);
 }
 
-.visually-hidden {
-  display: none;
-}
-
 h1,
 h2,
 h3,
@@ -228,8 +224,12 @@ h6 {
   font-weight: var(--font-weight-bold);
 }
 
-section {
-  padding: var(--section-padding);
+.visually-hidden {
+  display: none;
+}
+
+.card-category {
+  color: var(--color-primary);
 }
 
 .section-header {
@@ -246,20 +246,20 @@ section {
   text-align: var(--section-footer-align);
 }
 
+.section {
+  padding: var(--section-padding);
+}
+
 .section-title {
   font-family: var(--font-family-title);
-  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-xx-large);
+  font-weight: var(--font-weight-bold);
   margin: var(--section-title-margin);
   color: var(--section-title-color);
 }
 
-.section-tagline,
-.card-category {
-  color: var(--color-primary);
-}
-
 .section-tagline {
+  color: var(--color-primary);
   font-family: var(--font-family-title);
   text-transform: var(--section-tagline-transform);
   font-weight: var(--font-weight-bold);
@@ -271,6 +271,6 @@ section {
   margin-right: auto;
 }
 
-footer {
+.footer {
   padding: var(--footer-padding);
 }
