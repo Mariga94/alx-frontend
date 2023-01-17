@@ -154,8 +154,8 @@ template {
   --color-light-grey: #f3f3f3;
   --color-dark-grey: #353535;
   --text-color: var(--color-black);
-  --font-family-base: Open Sans, Helvetica, Arial, sans-serif;
-  --font-family-title: Raleway, Helvetica, Arial, sans-serif;
+  --font-family-base: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-family-title: "Raleway", Helvetica Neue, Helvetica, Arial, sans-serif;
   --font-size-small: 1.2rem;
   --font-size-medium: 1.6rem;
   --font-size-large: 1.8rem;
@@ -173,8 +173,10 @@ template {
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
+
 body {
   color: var(--text-color);
   font-family: var(--font-family-base);
@@ -184,6 +186,7 @@ body {
 }
 
 a:link {
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -191,12 +194,16 @@ a:visited {
   font-style: italic;
 }
 
-a:visited:hover {
+a:hover {
   text-decoration: underline;
 }
 
 a:active {
-  color: var(--color-light-grey);
+  background-color: var(--color-light-grey);
+}
+
+.visually-hidden {
+  display: none;
 }
 
 .section-header {
@@ -206,7 +213,7 @@ a:active {
 .section-title {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-weight-bold);
+  font-size: var(--font-size-xx-large);
   margin: var(--section-title-margin);
   color: var(--section-title-color);
 }
@@ -214,6 +221,16 @@ a:active {
 .section-tagline,
 .card-category {
   color: var(--color-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-bold);
 }
 
 .section-tagline {
